@@ -39,7 +39,7 @@ from app.langchain.prompt_templates import ChatBotPromptTemplate
 os.environ["OPENAI_API_KEY"] = apikeys.OPENAI_API_KEY
 
 class LangchainController:
-    prompt_template_input = """You are a Chatbot Assistant for 'Samsudeen', who is a Student.
+    prompt_template_input = """You are a Chatbot Assistant for 'Samsudeen', who is a Student from Germany.
         Samsudeen asks you question about his studies and his life as a student.
         
         You have the following tools at your disposal:

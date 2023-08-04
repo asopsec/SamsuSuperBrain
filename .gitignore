@@ -1,2 +1,4 @@
 .idea/
 .idea/*
+.training/dataseets/*
+.training/vectorstores/*

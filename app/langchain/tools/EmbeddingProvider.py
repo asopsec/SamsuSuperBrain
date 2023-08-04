@@ -3,6 +3,8 @@ import pathlib
 from datetime import datetime
 from typing import Optional, Type
 
+from config import apikeys
+
 from langchain.callbacks.manager import AsyncCallbackManagerForToolRun, CallbackManagerForToolRun, get_openai_callback
 from langchain.chains import ConversationalRetrievalChain
 from langchain.chat_models import ChatOpenAI
@@ -13,8 +15,7 @@ from langchain.tools import BaseTool, StructuredTool, Tool, tool
 from langchain import HuggingFaceHub, OpenAI, PromptTemplate
 from langchain.vectorstores import Chroma
 
-os.environ['OPENAI_API_KEY'] = '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'
-os.environ['HUGGINGFACEHUB_API_TOKEN'] = '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'
+os.environ['OPENAI_API_KEY'] = apikeys.OPENAI_API_KEY
 
 
 from typing import Optional
